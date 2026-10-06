@@ -36,7 +36,7 @@ class Login extends React.Component {
   }
 
   render(){
-    if(this.props.user.isLoggedIn) {
+    if(false && this.props.user.isLoggedIn) {
       return (<Navigate to='/home'/>);
     }
     else {
