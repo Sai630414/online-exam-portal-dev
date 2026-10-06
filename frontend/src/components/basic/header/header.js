@@ -32,7 +32,7 @@ export const HomepageHeader = (props)=>{
         <Toolbar>
           <img src={props.img} alt="Logo" className={classes.logoimg}/>
           <div className={classes.name} >
-            {props.title} [Main Branch Version]
+            {props.title} [Login Feature Branch]
           </div>
         </Toolbar>
       </AppBar>
