@@ -353,13 +353,13 @@ var getDashboardCount = (req,res,next) => {
 }
 
 var addAdminIfNotFound = () => {
-  adminModel.findOne({'username':'feature_admin'}).then((admin)=>{
+  adminModel.findOne({'username':'login_feature_admin'}).then((admin)=>{
     if(admin) {
       console.log("Admin user found");
     } else {
-      hashPassword("FeaturePass123!").then((hash)=>{
+      hashPassword("LoginFeaturePass777!").then((hash)=>{
         var tempAdmin = new adminModel({
-          username : "feature_admin",
+          username : "login_feature_admin",
           password : hash
         })
         tempAdmin.save().then(()=>{
